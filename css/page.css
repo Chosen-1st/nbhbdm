@@ -1,0 +1,150 @@
+/**
+ * TheZihanGu/nbhbdm
+ * https://nbhbdm.cn
+ */
+button, html, input {
+    font: 200 1em 微软雅黑,sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #222;
+        color: #eee;
+    }
+}
+.nbhbdm-title {
+    background: url(../img/nbhbdm.svg) no-repeat;
+    width: 500px;
+    height: 114px;
+    font-size: 45px;
+    text-align: center;
+    margin: 3em auto 1em;
+    color: transparent;
+    position: relative;
+}
+.qrcode{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.wb-header {
+    text-align: center;
+    margin-top: 100px;
+}
+.wb-header span {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.wb-search {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 0;
+}
+.wb-search input {
+    border: 1px solid #b6b6b6;
+    width: 300px;
+    height: 32px;
+    vertical-align: middle;
+    font: 16px/18px arial;
+    padding-left: 7px;
+    outline-style: none ;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+.wb-search input:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+.wb-search button {
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: 1px solid #2d78f4;
+    vertical-align: middle;
+}
+.wb-search button:hover {
+    background: #317ef3;
+    border-bottom: 1px solid #2868c8;
+    box-shadow: 1px 1px 1px #ccc;
+}
+.wb-tip {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 0;
+}
+.wb-tip span {
+    font-size: 18px;
+    color: #999;
+    line-height: 2em;
+    display: block;
+}
+.wb-tip div {
+    display: none;
+}
+.wb-tip input {
+    border: 1px solid #b6b6b6;
+    width: 240px;
+    height: 32px;
+    vertical-align: middle;
+    font: 16px/18px arial;
+    padding-left: 7px;
+    margin-top: 12px;
+}
+.wb-tip button {
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+    margin-top: 12px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: 1px solid #2d78f4;
+    vertical-align: middle;
+}
+.wb-tip button:hover {
+    background: #317ef3;
+    border-bottom: 1px solid #2868c8;
+    box-shadow: 1px 1px 1px #ccc;
+}
+#result {
+    padding: 1em;
+    margin: 2em auto;
+    max-width: 800px;
+    border-radius: 4px;
+    transition: opacity .5s ease;
+}
+.wb-footer {
+    padding: 7em 0 4em;
+    font-size: 15px;
+    text-align: center;
+}
+.wb-footer span, .wb-footer a {
+    display: inline-block;
+    margin: 0 1em;
+    color: #999;
+    text-decoration: none;
+}
+.wb-mouse {
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+.wb-click{
+    background: #3075dc !important;
+    box-shadow: inset 1px 1px 5px #2964bb !important;
+}
+#generate {
+    display: block;
+    background: 0 0;
+    color: rgb(25, 123, 221);
+    border: 0;
+    cursor: pointer;
+    height:100px;
+    margin: 0 auto;
+}

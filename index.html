@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>你不会百度吗?</title>
+        <meta name="description" content="你不会百度吗？">
+        <meta name="keywords" content="不会百度吗, 你不会百度吗，不会百度么, 你不会百度么, 你不会百度吗 网站, 不会百度吗网站, 不会百度怎么办, 不会百度嘛, CNM不会百度吗">
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name=viewport content="width=550,user-scalable=no">
+        <link href="./img/favicon.ico" rel="icon" type="image/x-icon"/>
+        <!-- BEGIN:MDUI -->
+        <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
+        <script src="https://cdn.bootcdn.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
+        <!-- END:MDUI -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ENV1J2D0P"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0ENV1J2D0P');
+        </script>
+
+        <!-- Matomo -->
+        <script type="text/javascript">
+        var _paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//s.tzg6.com/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '10']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+        </script>
+        <!-- End Matomo Code -->
+        <link href="./css/page.css" rel="stylesheet"></link>
+    </head>
+    <body>
+        <h1 class="nbhbdm-title">你不会百度吗</h1>
+        <div class="wb-search" id="search">
+            <input autofocus="autofocus" id="search-input" placeholder="在这里输入关键字~" type="text"/>
+            <button id="search-button" class="mdui-btn mdui-color-theme-accent mdui-ripple">百度一下</button>
+        </div>
+        <div class="wb-tip" id="tip">
+            <span id="tip1">
+                {{ message }}
+            </span>
+        </div>
+        <div class="mdui-panel" mdui-panel style=display:none; id="result">
+            <div class="mdui-panel-item mdui-panel-item-open">
+                <div class="mdui-panel-item-body">
+                    <p></p>
+                    <div class="mdui-typo">
+                        <h3>链接</h3>
+                        <p>通用链接：<d id="normallink">{{ message }}</d></p>
+                        <p>短链接：<d id="shortlink">{{ message }}</d></p>
+                        <button data-clipboard-target="#normallink" class="mdui-btn copy mdui-color-theme-accent mdui-ripple">复制通用链接</button><button data-clipboard-target="#shortlink" class="mdui-btn copy mdui-color-theme-accent mdui-ripple">复制短链接</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <button id=generate>停一停！我会百度，我要生成链接！</button>
+        <div class="wb-footer" id="footer">
+            <span>
+                <a href="https://zihangu.com">ZihanGu的博客</a>
+                |
+                <a href="https://github.com/TheZihanGu/nbhbdm">本项目Github</a>
+                |
+                <a href="https://api.tzg6.com">基于TZG API</a>
+            </span>
+            <br><br>
+            <a href="http://beian.miit.gov.cn/">浙ICP备20012414号-2</a>
+            <br><br>
+        </div>
+        <img class="wb-mouse" id="fake-mouse" src="./img/mouse.png"/>
+        <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+        <script src="./js/page.js"></script>
+    </body>
+</html>
